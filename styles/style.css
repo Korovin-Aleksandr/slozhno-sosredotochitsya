@@ -47,9 +47,7 @@
   line-height: 25px;
   text-transform: uppercase;
   color: var(--accent-color);
-  right: 28px;
 }
-
 
 .rec_conteiner::after {
   position: absolute;
@@ -62,7 +60,6 @@
   left: 42px;
   top: 7px;
 }
-
 
 .header__theme-menu {
   justify-self: end;
@@ -102,9 +99,6 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button_active {
   pointer-events: none;
 }
 
@@ -126,7 +120,6 @@
   font-weight: 700;
   font-size: var(--font-size);
   line-height: var(--main-lineheight);
-  color: var(-alt-text-color);
 }
 
 .block_top {
