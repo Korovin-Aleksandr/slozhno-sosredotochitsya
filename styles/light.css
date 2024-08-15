@@ -1,12 +1,157 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root .theme_light {
+  --bg-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --alt-text-color: #353430;
+  --bg-image: url(..//images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --alt-text-color: #353430;
+    --bg-image: url(..//images/cover-image-light.png);
+  }
+
+  .block_title {
+    color: var(--text-color);
+  }
+
+  .header::after {
+    border-top: 1px solid var(--text-color);
+    border-inline-end: 1px solid var(--text-color);
+  }
+
+  .header::before {
+    border-bottom: 1px solid var(--text-color);
+    border-inline-start: 1px solid var(--text-color);
+  }
+
+  .rec_conteiner {
+    color: transparent;
+  }
+
+  .rec_conteiner::after {
+    background-color: transparent;
+    box-shadow: 0 0 4px 2px transparent;
+  }
+
+  .header__theme-menu-button {
+    color: var(--text-color);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4);
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--text-color);
+  }
+
+  .title {
+    color: #ffc2e6;
+  }
+
+  .text_link:focus-visible {
+    outline: 1px solid var(--text-color);
+  }
+
+  .text_link:hover {
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  .title_content {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+  }
+
+  .footer_title {
+    color: #ffc2e6;
+    text-shadow: 2px 2px 0 #ff0070;
+  }
+
+  .footer::after {
+    border-top: 1px solid var(--text-color);
+    border-inline-end: 1px solid var(--text-color);
+  }
+
+  .footer::before {
+    border-bottom: 1px solid var(--text-color);
+    border-inline-start: 1px solid var(--text-color);
+  }
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  background-image: var(--bg-image);
+}
+
+.page.theme_light .block_title {
+  color: var(--text-color);
+}
+
+.page.theme_light .header::after {
+  border-top: 1px solid var(--text-color);
+  border-inline-end: 1px solid var(--text-color);
+}
+
+.page.theme_light .header::before {
+  border-bottom: 1px solid var(--text-color);
+  border-inline-start: 1px solid var(--text-color);
+}
+
+.page.theme_light .rec_conteiner {
+  color: transparent;
+}
+
+.page.theme_light .rec_conteiner::after {
+  background-color: transparent;
+  box-shadow: 0 0 4px 2px transparent;
+}
+
+.page.theme_light .header__theme-menu-button {
+  color: var(--text-color);
+}
+
+.page.theme_light .header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.4);
+}
+
+.page.theme_light .header__theme-menu-button_active {
+  border: 1px solid var(--text-color);
+}
+
+.page.theme_light .title {
+  color: #ffc2e6;
+}
+
+.page.theme_light .text_link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
+.page.theme_light .text_link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.page.theme_light .title_content {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+.page.theme_light .footer_title {
+  color: #ffc2e6;
+  text-shadow: 2px 2px 0 #ff0070;
+}
+
+.page.theme_light .footer::after {
+  border-top: 1px solid var(--text-color);
+  border-inline-end: 1px solid var(--text-color);
+}
+
+.page.theme_light .footer::before {
+  border-bottom: 1px solid var(--text-color);
+  border-inline-start: 1px solid var(--text-color);
 }
