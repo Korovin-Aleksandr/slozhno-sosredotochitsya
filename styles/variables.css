@@ -4,6 +4,7 @@
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --alt-text-color: #000028;
+  --hover-color: rgba(255, 0, 112, 0.4);
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-decor: 4px 4px 0 var(--accent-color);
   --main-font: "IBM Plex mono", sans-serif;
@@ -14,7 +15,7 @@
   --main_gap: 20px;
 }
 
-@media (375px < width <= 768px) {
+@media (width >= 768px) {
   :root {
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --main_gap: 20px;
@@ -23,7 +24,7 @@
   }
 }
 
-@media (width > 768px) {
+@media (width >= 1024px) {
   :root {
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --main_gap: 20px;

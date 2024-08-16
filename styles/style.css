@@ -82,19 +82,20 @@
   font-weight: 400;
   line-height: 1.12em;
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid rgba(50, 49, 45, 0.4);
+  border-bottom: 1px solid  var(--accent-color);
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid rgba(50, 49, 45, 0.4);
+  border-bottom: 1px solid  var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button_active {
@@ -246,7 +247,7 @@
   color: #db00ff;
 }
 
-@media (375px < width <= 768px) {
+@media (width >= 768px) {
   .header {
     block-size: 100vh;
     min-block-size: 1024px;
@@ -363,7 +364,7 @@
   }
 }
 
-@media (width > 768px) {
+@media (width >= 1024px) {
   .header {
     block-size: 100vh;
     min-block-size: 768px;
